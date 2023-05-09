@@ -1,0 +1,105 @@
+.hero {
+    background-color: #f2f2f2;
+    padding: 50px 20px;
+  }
+  
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heroText {
+    text-align: center;
+  }
+  
+  .heroTitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .heroSubtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .heroButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .heroImage {
+    margin-top: 50px;
+  }
+  
+  @media (min-width: 768px) {
+    .heroContent {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .heroText {
+      width: 50%;
+      text-align: left;
+    }
+  
+    .heroTitle {
+      font-size: 60px;
+      margin-bottom: 30px;
+    }
+  
+    .heroSubtitle {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  
+    .heroButton {
+      font-size: 24px;
+    }
+  
+    .heroImage {
+      width: 50%;
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .heroContent {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .heroText {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .heroTitle {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  
+    .heroSubtitle {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+  
+    .heroButton {
+      font-size: 18px;
+    }
+  
+    .heroImage {
+      width: 100%;
+    }
+  }
+  
