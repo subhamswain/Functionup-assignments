@@ -1,0 +1,20 @@
+.MainContainer{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid black; */
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(246, 194, 175);
+   
+}
+.MainContainer img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
