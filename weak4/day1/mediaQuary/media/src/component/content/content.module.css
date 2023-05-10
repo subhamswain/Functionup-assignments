@@ -2,6 +2,7 @@
 
 .content{
     display: flex;
+    width: 100vw;
     justify-content: space-evenly;
     background-color: rgb(84, 81, 81);
 }
@@ -50,7 +51,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
     .content{
         flex-direction: column-reverse;
-        width: 32rem;
+        width: 100vw;
         justify-content:space-between;
        
     }
@@ -60,13 +61,12 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     }
     .images img{
-        width: 27rem;
+        width: 90vw;
+        z-index: 1;
     }
     .text{
-        width: 26rem;
+        width: 90vw;
         margin-left: 2rem;
-
-
     }
     
  }
