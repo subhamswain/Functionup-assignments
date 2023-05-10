@@ -1,0 +1,20 @@
+.ProfileContainer{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid black; */
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: rgba(30, 189, 80, 0.881) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(232, 28, 35);
+   
+}
+.ProfileContainer img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
