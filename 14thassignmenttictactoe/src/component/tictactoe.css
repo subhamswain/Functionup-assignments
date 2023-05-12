@@ -1,0 +1,90 @@
+.tic-tac-toe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 155px;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.player-indicator {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.game-display {
+    
+    margin-top: 35px;
+
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.winner-message {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.play-again-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.play-again-button:hover {
+    background-color: #45a049;
+}
+
+.game-drawn-message {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
