@@ -1,0 +1,31 @@
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    background-color: coral;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    margin-left: 10pc;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.parent  button{
+    padding: 5px;
+}
+.que{
+    background-color: rgb(46, 246, 136);
+    padding: 15px;
+    border-radius: 10px;
+
+}
+
+.option div{
+   padding: 10px;
+   margin-top: 200px;
+
+}
+.option button{
+    padding: 10px;
+}
