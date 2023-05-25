@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 // import { listItem } from './items';
-import { addItems } from './todoSlice'
+import { addItems ,  updateStatus} from './todoSlice'
 import { useDispatch,useSelector } from 'react-redux'
 function Todo() {
 const [id , setId] = useState(0)
@@ -27,25 +27,56 @@ const myList = useSelector(state => state.todo.todo)
     const HandleChange = (e) => {
       setInputValue(e.target.value)
     }
-    const ChangeStatus = () => {
-
-        disPatch(useDispatch())
+    const ChangeStatus = (id) => {
+      const cItem = myList.find((el)=> el.id === id);
+      const nS = cItem.status === "pending" ? "completed" : "pending"
+   disPatch( updateStatus({id,status:nS}))
+  
+       
     }
+  const addStyle = {
+    color : "green",
+    background : "pink",
+    borderRadius :"10px",
+    padding : "5px",
+
+  }
     
 
   return (
     <>
-    <div>
-     <input value={Value} type='text'onChange={HandleChange}/> 
-     <button onClick={AddList}> + </button>  
+    <div style={{textAlign:"center",padding:"10px"}} className='arr'>
+     <input value={Value} type='text'onChange={HandleChange} style={
+        {
+            background : "gray",
+            color :"balck",
+            padding : "10px",
+            borderRadius : "10px"
+
+
+        }
+     }/> 
+     <button onClick={AddList} style={
+         {
+            background : "gray",
+            color :"balck",
+            padding : "12px",
+            borderRadius : "10px",
+            border : "none",
+            marginLeft : "5px"
+
+
+        }
+     }> + </button>  
     </div>
     {myList.map((el)=>{
         return(
-            <div key={el.id}>
+            <div key={el.id} style={{display:"flex",justifyContent:"space-evenly"}}>
             
             <h1>{el.name}</h1>
             <h3>{el.id}</h3>
-            <h3 onClick={()=>ChangeStatus(el.id)}>{el.status}</h3>
+            <h3 onClick={()=>ChangeStatus(el.id) } style={addStyle}
+                >{el.status} </h3>
             </div>
         )
     })}
