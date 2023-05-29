@@ -1,0 +1,26 @@
+*{
+  background-color: rgba(52, 54, 50, 0.858);
+  color: rgba(210, 219, 221, 0.934);
+ 
+}
+.App{
+ 
+  overflow-x: hidden;
+}
+.App div {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ /* border: 3px solid black; */
+ margin-top: 5px;
+ margin-bottom: 10px;
+ 
+ background-color: rgb(235, 112, 112);
+}
+.App  nav{
+  color: blanchedalmond;
+  background-color: blue;
+  width: 100vw;
+  margin-right: 500px;
+}
