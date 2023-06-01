@@ -1,147 +1,165 @@
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.signUpSection{
-   height: 100vh;
-   width: 100vw; 
-   background-color: rgb(71, 74, 74);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-
-.main {
-    height: 86vh;
-    width: 38vw;
-    border-radius: 1rem;
-    background-color: #fff;
+.main_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
-
-}
-.logo {
-    color: #1DA1F2;
-    font-size: 2rem;
-    margin-top: 0.4rem;
-}
-.signInText{
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 1.2rem 0 2rem 0;
-    font-family: "Sawarabi+Gothic",sans-serif;
-}
-
-.signInWithGoogle input {
-    height: 2.4rem;
-    width: 20vw;
-    border: 1px solid rgb(183, 180, 180);
-    border-radius: 4rem;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 5% 27% 5% 27%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    min-width: 750px;
+    min-height: 650px;
 
 }
 
-.signInWithGoogle p {
-    position: relative;
-    bottom: 2.1rem;
+.twitterIcon {
+    height: 40px;
+    width: 40px;
+    color: #437ff9;
     
 }
-.signInWithGoogle p span {
-    position: relative;
-    top: 0.2rem;
-    margin-right: 0.4rem;
-    font-size: 1.2rem;
-}
-.signInWithApple input {
-    height: 2.4rem;
-    width: 20vw;
-    border: 1px solid rgb(190, 186, 186);
-    border-radius: 4rem;
 
-}
-.signInWithApple p {
-    position: relative;
-    bottom: 2.1rem;
-    
-}
-.signInWithApple p span {
-    position: relative;
-    top: 0.2rem;
-    margin-right: 0.4rem;
-    font-size: 1.2rem;
-}
-.underline {
-    height: 0.05rem;
-    width: 8vw;
-    position: relative;
-    right: 13%;
-    background-color: rgb(211, 211, 216);
-}
-.underline_2 {
-    height: 0.05rem;
-    width: 8vw;
-    position: relative;
-    bottom: 1.521rem;
-    left: 12.6%;
-    background-color: rgb(211, 211, 216);
-}
-.p {
-    position: relative;
-    bottom: 0.8rem;
-    right: 0.1rem;
-    font-size: 1.1rem;
-}
-.outlinedInput {
-    width: 18.80vw;
-}
-.nextBtn {
-    height: 2.4rem;
-    width: 20vw;
-    border: 1px solid rgb(183, 180, 180);
-    border-radius: 4rem;
-    margin-top: 2rem; 
-    background-color: #000;
-
-}
-.nextBtn span {
-    font-size: 1rem;
-    position: relative;
-    top: 0.4rem;
-    color: #fff;
-}
-.password {
-    height: 2.4rem;
-    width: 20vw;
-    border: 1px solid rgb(183, 180, 180);
-    border-radius: 4rem;
-    margin-top: 2rem; 
-}
-.password span {
-    font-size: 1rem;
-    position: relative;
-    top: 0.4rem;  
+.sign_heading {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
 }
 
-.footer {
-    margin-top: 2rem; 
+.google_btn,
+.apple_btn {
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.footer button {
-    background: none;
+
+.google_btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 400px;
+
+}
+
+.apple_btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    width: 400px;
+}
+
+.line {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.input_style {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 400px;
+    height: 80px;
+    font-size: 25px;
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+}
+
+
+.next_btn {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background-color: #000000;
+    width: 400px;
+    padding: 10px 40px;
+    border-radius: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* .next_btn:hover {
+    background-color: #0c87e8;
+  } */
+
+.forget_btn {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
     border: none;
-    font-size: 1rem;
-    margin-left: 0.2rem;
-    color: #1DA1F2;
+    width: 400px;
+    border: 1px solid black;
 }
-.footer button:hover {
-    text-decoration: underline;
-    transition: 0.2s ease-in-out;
+
+.forget_btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.noAccount {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    /* Remove list styling */
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    .main_container {
+        margin: 5% 10%;
+    }
+
+    .sign_heading {
+        font-size: 30px;
+    }
+
+    .google_btn,
+    .apple_btn {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    .line {
+        font-size: 20px;
+    }
+
+    .input_style {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .next_btn {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    .forget_btn {
+        font-size: 16px;
+        padding: 8px 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
 }
